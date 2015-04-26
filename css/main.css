@@ -170,10 +170,28 @@ a {
   width: 50%;
 }
 
+.contact img {
+  float: left;
+  width: 20%;
+}
+
+.contact .vcard {
+  margin: 25px 0 25px 21%;
+  text-align: left;
+}
+
 .footer {
   background: url('../img/S004_U-Boat_XXIII.png') no-repeat;
   background-size: 100%;
+  font-size: 1.2em;
   min-height: 240px;
+  position: relative;
+}
+
+.footer .text {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 }
 
 /* ==========================================================================

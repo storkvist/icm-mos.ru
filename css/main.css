@@ -126,7 +126,7 @@ h1 small {
 }
 
 p {
-  margin-top: 0;
+  margin: 0 0 20px 0;
 }
 
 a {
@@ -162,7 +162,7 @@ a {
 .catalog {
   background-color: rgb(239, 235, 233);
   font-size: 20px;
-  margin: 20px 0 25px 0;
+  margin: 20px 0 0 0;
   padding: 20px 0 25px 0;
 }
 
@@ -175,29 +175,36 @@ a {
   width: 50%;
 }
 
+
+
 .contact {
-  height: 300px;
-}
-
-.contact img {
-  float: left;
-  height: 300px;
-  /*width: 20%;*/
-}
-
-.contact .map {
-  float: right;
-  width: 300px;
+  background: url('../img/35331_SovMotoInf.png') 5px top no-repeat;
+  background-size: auto 300px;
+  height: 600px;
 }
 
 .contact .vcard {
-  margin: 25px 300px 25px 21%;
+  height: 220px;
+  margin:0 20px 0 120px;
+  padding-top: 80px;
   text-align: left;
 }
+
+.contact .email {
+  white-space: nowrap;
+}
+
+.contact .map {
+  height: 300px;
+}
+
+
+
 
 .footer {
   background: url('../img/S004_U-Boat_XXIII.png') no-repeat;
   background-size: 100%;
+  clear: both;
   font-size: 1.2em;
   min-height: 240px;
   position: relative;
@@ -288,6 +295,17 @@ a {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (min-width: 900px) {
+  .contact .map {
+    margin-left: 450px;
+  }
+
+  .contact .vcard {
+    float: left;
+    width: 300px;
+  }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */

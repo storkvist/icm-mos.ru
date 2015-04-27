@@ -154,12 +154,10 @@ a {
 .feature .text {
   margin: 0 auto;
   max-width: 240px;
-  min-height: 80px;
+  min-height: 120px;
   padding: 0 10px;
   text-align: center;
 }
-
-
 
 .catalog {
   background-color: rgb(239, 235, 233);
@@ -314,6 +312,10 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
+  .feature {
+    width: 33%;
+  }
+
   .catalog p {
     float: left;
     margin: 120px 100px;

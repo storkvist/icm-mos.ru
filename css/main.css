@@ -159,11 +159,13 @@ a {
   text-align: center;
 }
 
+
+
 .catalog {
   background-color: rgb(239, 235, 233);
   font-size: 20px;
   margin: 20px 0 0 0;
-  padding: 20px 0 25px 0;
+  padding: 20px 20px 25px 20px;
 }
 
 .catalog img {
@@ -174,8 +176,6 @@ a {
   margin: 0 auto;
   width: 50%;
 }
-
-
 
 .contact {
   background: url('../img/35331_SovMotoInf.png') 5px top no-repeat;
@@ -317,6 +317,17 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
+  .catalog p {
+    float: left;
+    margin: 120px 100px;
+    width: 300px;
+  }
+
+  .catalog img {
+    height: 300px;
+    width: auto;
+  }
+
   .contact {
     height: 300px;
   }

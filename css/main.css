@@ -144,6 +144,19 @@ a {
   height: 300px;
 }
 
+.friends {
+  margin-top: 100px;
+}
+
+.friends .slick-slide {
+  text-align: center;
+}
+
+.friends .slick-slide img {
+  height: 60px;
+  margin: 20px auto;
+}
+
 .footer {
   background: url('../img/S004_U-Boat_XXIII.png') bottom center no-repeat;
   background-size: 100%;

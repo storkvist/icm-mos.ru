@@ -288,6 +288,10 @@ a {
     padding-top: 80px;
     width: 300px;
   }
+
+  .forum {
+    width: 47%;
+  }
 }
 
 @media only screen and (min-width: 35em) {

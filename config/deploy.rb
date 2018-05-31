@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:storkvist/icm-mos.ru.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/user/webapps/icm-mos.ru'
+set :deploy_to, '/home/storkvist/icm-mos.ru'
 
 # Default value for :scm is :git
 # set :scm, :git

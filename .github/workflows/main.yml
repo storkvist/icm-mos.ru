@@ -1,16 +1,14 @@
-name: deploy_to_production
-
 on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: miloserdow/capistrano-deploy@v1.3
+      - id: deploy
+        uses: ./.github/actions/deploy@v1
         with:
-          target: production
           deploy_key: ${{secrets.DEPLOY_ENC_KEY}}
+      - run: echo "icm-mos.ru was deployed at ${{ steps.deploy.outputs.time }}"

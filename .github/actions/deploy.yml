@@ -1,0 +1,8 @@
+name: Deploy with Capistrano
+description: Deploy icm-mos.ru to production using Capistrano
+outputs:
+  time:
+    description: The time icm-mos.ru was deployed
+runs:
+  using: docker
+  image: Dockerfile

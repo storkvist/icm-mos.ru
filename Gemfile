@@ -1,5 +1,5 @@
-ruby '2.5.1'
+ruby "2.7.0"
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'capistrano', '3.4.0'
+gem "capistrano", "3.4.0"

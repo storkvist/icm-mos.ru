@@ -1,3 +1,5 @@
+name: Deploy icm-mos.ru
+
 on:
   push:
     branches:

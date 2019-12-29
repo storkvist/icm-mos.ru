@@ -7,4 +7,4 @@ RUN apk add --update openssh-client openssl && \
 
 WORKDIR /app
 
-ENTRYPOINT ["/app/config/deploy/start_deploy.sh"]
+ENTRYPOINT ["config/deploy/start_deploy.sh"]

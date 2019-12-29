@@ -12,6 +12,6 @@ jobs:
       - uses: actions/checkout@v1
       - id: deploy
         uses: ./.github/actions/deploy@v1
-        with:
-          deploy_key: ${{secrets.DEPLOY_ENC_KEY}}
+        env:
+          DEPLOY_ENC_KEY: ${{ secrets.DEPLOY_ENC_KEY }}
       - run: echo "icm-mos.ru was deployed at ${{ steps.deploy.outputs.time }}"

@@ -1,7 +1,5 @@
 #!/bin/sh -l
 
-echo $DEPLOY_ENC_KEY
-
 openssl enc -d -aes-256-cbc -md sha512 -pbkdf2 -iter 100000 -salt -in config/deploy_id_rsa_enc -out config/deploy_id_rsa -k $DEPLOY_ENC_KEY -a
 chmod 600 config/deploy_id_rsa
 
